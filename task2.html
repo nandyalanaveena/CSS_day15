@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 2px solid green;
+        margin: 20px;
+        padding: 10px;
+      }
+      hr {
+        border: 2px solid black;
+      }
+      ul {
+        list-style-type: disc;
+      }
+      h1 {
+        color: red;
+        border: 2px solid black;
+        width: 500px;
+        text-align: center;
+        margin-left: 350px;
+        padding: 10px;
+      }
+      h2 {
+        color: royalblue;
+      }
+      img {
+        transition: all;
+        transition-duration: 5s;
+      }
+      .img1 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+      }
+      .img1 img:hover {
+        transform: translateX(200px);
+      }
+      .img2 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+      }
+      .img2 img:hover {
+        transform: translateY(50px);
+      }
+      .img3 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 50px;
+      }
+      .img3 img:hover {
+        transform: translate(200px);
+      }
+      .img4 img {
+        width: 150px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img4 img:hover {
+        transform: rotateX(50deg);
+      }
+      .img5 img {
+        width: 150px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img5 img:hover {
+        transform: rotateY(80deg);
+      }
+      .img6 img {
+        width: 150px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img6 img:hover {
+        transform: rotate(50deg);
+      }
+      .img7 img {
+        width: 250px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img7 img:hover {
+        transform: scaleX(1.5);
+      }
+      .img8 img {
+        width: 250px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img8 img:hover {
+        transform: scaleY(1.5);
+      }
+      .img9 img {
+        width: 250px;
+        height: 200px;
+        margin-left: 100px;
+      }
+      .img9 img:hover {
+        transform: scale(1.5);
+      }
+      .img10 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 100px;
+      }
+      .img10 img:hover {
+        transform: skewX(20deg);
+      }
+      .img11 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 100px;
+      }
+      .img11 img:hover {
+        transform: skewY(20deg);
+      }
+      .img12 img {
+        width: 250px;
+        height: 250px;
+        margin-left: 100px;
+      }
+      .img12 img:hover {
+        transform: skew(40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1><center>Transform Properties in CSS</center></h1>
+    <ul>
+      <li>
+        In CSS, the transform property is used to apply various transformations
+        to an element, such as rotating, scaling, skewing, or translating
+        (moving) it.
+      </li>
+      <li>
+        It allows you to manipulate the appearance and position of elements on a
+        web page without affecting the document's normal flow.
+      </li>
+    </ul>
+    <h2>Property No:1:- Translate</h2>
+    <p>
+      It is used to moves an element along the horizontal and vertical axes. It
+      takes two values, translateX () for horizontal movement and translateY ()
+      for vertical movement.
+    </p>
+    <pre>
+        It has 3 attributes. They are:
+                  1. translateX
+                  2. translateY
+                  3. translate
+    </pre>
+    <h3>1. translateX: (along x-axis)</h3>
+    <div class="img1">
+      <img src="image1.jfif" />
+    </div>
+    <h3>2. translateY: (along y-axis)</h3>
+    <div class="img2">
+      <img src="image1.jfif" />
+    </div>
+    <br /><br />
+    <h3>3. translate: (both x and y axis)</h3>
+    <div class="img3">
+      <img src="image1.jfif" />
+    </div>
+    <hr />
+    <h2>Property No:2:- Rotate</h2>
+    <p>
+      It is used to rotates an element clockwise or counterclockwise. It takes
+      an angle value as the parameter. For example, transform rotate(45deg);
+      rotates the element 45 degrees clockwise.
+    </p>
+    <pre>
+        It has 3 attributes. They are:
+                  1. rotateX
+                  2. rotateY
+                  3. rotate
+    </pre>
+    <h3>1. rotateX: (along x-axis)</h3>
+    <div class="img4">
+      <img src="image2.jfif" />
+    </div>
+    <h3>3. rotateY: (along y-axis)</h3>
+    <div class="img5">
+      <img src="image2.jfif" />
+    </div>
+    <h3>3. rotate: (both x and y axis)</h3>
+    <div class="img6">
+      <img src="image2.jfif" />
+    </div>
+    <hr />
+    <h2>Property No:3:- Scale</h2>
+    <p>
+      It is used to Scales an element up or down in size. It takes one or two
+      values to specify the scaling factor.
+    </p>
+    <pre>
+        It has 3 attributes. They are:
+                  1. scaleX
+                  2. scaleY
+                  3. scale
+    </pre>
+    <h3>1. scaleX: (along x-axis)</h3>
+    <div class="img7">
+      <img src="image3.jfif" />
+    </div>
+    <h3>3. scaleY: (along y-axis)</h3>
+    <div class="img8">
+      <img src="image3.jfif" />
+    </div>
+    <h3>1. scale: (both x and y axis)</h3>
+    <div class="img9">
+      <img src="image3.jfif" />
+    </div>
+    <hr />
+    <h2>Property No:4:- Skew</h2>
+    <p>
+      It is used to Skews an element along the horizontal or vertical axes. It
+      takes two angle values as parameters, skewX () for horizontal skewing and
+      skewY () for vertical skewing.
+    </p>
+    <pre>
+        It has 3 attributes. They are:
+                  1. skewX
+                  2. skewY
+                  3. skew
+    </pre>
+    <h3>1. skewX: (along x-axis)</h3>
+    <div class="img10">
+      <img src="image4.jfif" />
+    </div>
+    <h3>3. skewY: (along y-axis)</h3>
+    <div class="img11">
+      <img src="image4.jfif" />
+    </div>
+    <br />
+
+    <h3>3. skew: (both x and y axis)</h3>
+    <div class="img12">
+      <img src="image4.jfif" />
+    </div>
+  </body>
+</html>

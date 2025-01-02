@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+        background-color: aqua;
+        width: 500px;
+        height: 400px;
+        margin: auto;
+        margin-top: 80px;
+      }
+      div > img {
+        margin-top: 100px;
+        margin-left: 110px;
+        transition: all;
+        transition-duration: 1s;
+      }
+      button {
+        width: 90px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-left: 25px;
+        background-color: black;
+        color: white;
+        margin-top: 20px;
+      }
+      .button1:hover ~ img {
+        transform: translate(20px);
+      }
+      .button2:hover ~ img {
+        transform: rotate(180deg);
+      }
+      .button3:hover ~ img {
+        transform: scale(1.5);
+      }
+      .button4:hover ~ img {
+        transform: skew(10deg);
+        transition: all;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="button1">Translate</button>
+      <button class="button2">Rotate</button>
+      <button class="button3">Scale</button>
+      <button class="button4">Skew</button>
+      <img src="image.jfif" />
+    </div>
+  </body>
+</html>
